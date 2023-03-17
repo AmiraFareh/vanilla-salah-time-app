@@ -1,5 +1,5 @@
 body{
-    background-color: #8f1383;
+    background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
 }
 h1{
     text-align: center;
