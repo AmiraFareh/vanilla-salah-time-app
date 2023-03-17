@@ -4,6 +4,7 @@ body{
 h1{
     text-align: center;
     color: blanchedalmond;
+    padding: 20px;
 }
 .salah-time-app-wrapper{
     max-width: 480px;
