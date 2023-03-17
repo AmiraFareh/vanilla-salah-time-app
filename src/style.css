@@ -6,6 +6,10 @@ h1{
     color: blanchedalmond;
     padding: 20px;
 }
+
+.btn{
+    color: #c3195d;
+}
 .salah-time-app-wrapper{
     max-width: 480px;
     margin: 30px auto;
