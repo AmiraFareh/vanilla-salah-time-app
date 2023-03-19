@@ -39,7 +39,7 @@ return date
 function storePosition(position) {
     let latitude = position.coords.latitude;
     let longitude = position.coords.longitude;
-    let apiUrl = `http://api.aladhan.com/v1/timings/${formatDate()}?latitude=${latitude}&longitude=${longitude}&method=3`;
+    let apiUrl = `https://api.aladhan.com/v1/timings/${formatDate()}?latitude=${latitude}&longitude=${longitude}&method=3`;
     axios.get(apiUrl).then(displaySalahTime); 
   }
 
