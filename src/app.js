@@ -1,5 +1,8 @@
 function displaySalahTime(response){
 console.log(response);
+let currentDateElement = document.querySelector("#date");
+let currentDate = response.data.data.date.readable;
+currentDateElement.innerHTML = currentDate;
 let fajrTime = response.data.data.timings.Fajr
 let fajrElement = document.querySelector("#fajr")
 fajrElement.innerHTML = fajrTime
@@ -39,6 +42,7 @@ return date
 function storePosition(position) {
     let latitude = position.coords.latitude;
     let longitude = position.coords.longitude;
+    console.log(position);
     let apiUrl = `https://api.aladhan.com/v1/timings/${formatDate()}?latitude=${latitude}&longitude=${longitude}&method=3`;
     axios.get(apiUrl).then(displaySalahTime); 
   }
