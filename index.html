@@ -1,91 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salah time App
-    </title>
-    <link rel="stylesheet" href="src/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salah time App</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="salah-time-app-wrapper">
-            <div class="salah-time-app">
-              <button type="button" class="btn btn-dark" id="current-location-button">Current Location</button>
-              <span class="date" id="date"></span>
-                  <h1>
-                    Hamilton
-                  </h1>
+      <div class="salah-time-app-wrapper">
+        <div class="salah-time-app">
+          <button
+            type="button"
+            class="btn btn-dark"
+            id="current-location-button"
+          >
+            Current Location
+          </button>
+          <span class="date" id="date"></span>
+          <h1>Salah Times</h1>
 
-                 
-                  <div class="grid-container">
-                    <div class="row">
-                      <div class="col-4">
-                        Fajr
-                        <div class="emoji">
-                            🌄
-                        </div>
-                        <div class="fajr-time" id="fajr">
-                            
-                        </div>
-                        </div>
+          <div class="grid-container">
+            <div class="row">
+              <div class="col-4">
+                Fajr
+                <div class="emoji">🌄</div>
+                <div class="fajr-time" id="fajr"></div>
+              </div>
 
-                      <div class="col-4">
-                        Sunrise
-                        <div class="emoji">
-                            🌅
-                        </div>
-                        <div class="sunrise-time" id="sunrise">
-                            
-                        </div>
-                      </div>
-                      <div class="col-4">
-                        Dhuhr
-                        <div class="emoji">
-                             ☀
-                        </div>
-                        <div class="dhuhr-time" id="dhuhr">
-                            
-                        </div>
-                      </div>
-                     
+              <div class="col-4">
+                Sunrise
+                <div class="emoji">🌅</div>
+                <div class="sunrise-time" id="sunrise"></div>
+              </div>
+              <div class="col-4">
+                Dhuhr
+                <div class="emoji">☀</div>
+                <div class="dhuhr-time" id="dhuhr"></div>
+              </div>
 
-                      <div class="col-4">
-                        Asr
-                        <div class="emoji">
-                            ⛺
-                        </div>
-                        <div class="asr-time" id="asr">
-                            
-                        </div>
-                      </div>
-                       <div class="col-4">
-                        Maghrib
-                        <div class="emoji">
-                            🌇
-                        </div>
-                        <div class="maghrib-time" id="maghrib">
-                            
-                        </div>
-                      </div>
-                      <div class="col-4">
-                        Isha
-                        <div class="emoji">
-                            🌆
-                        </div>
-                        <div class="isha-time" id="isha">
-                            
-                        </div>
-                      </div>
-                      
-                    </div>
-                  </div>
+              <div class="col-4">
+                Asr
+                <div class="emoji">⛺</div>
+                <div class="asr-time" id="asr"></div>
+              </div>
+              <div class="col-4">
+                Maghrib
+                <div class="emoji">🌇</div>
+                <div class="maghrib-time" id="maghrib"></div>
+              </div>
+              <div class="col-4">
+                Isha
+                <div class="emoji">🌆</div>
+                <div class="isha-time" id="isha"></div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</body>
-<script src="src/app.js"></script>
+    <footer>
+      Coded by <strong>Amira Fareh</strong> and
+      <a
+        href="https://github.com/AmiraFareh/world-clock"
+        target="
+        "
+        >open-sourced on Github</a
+      >
+    </footer>
+  </body>
+  <script src="src/app.js"></script>
 </html>
