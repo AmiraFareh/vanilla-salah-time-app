@@ -1,54 +1,54 @@
-body{
-    background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
+body {
+  background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
 }
-h1{
-    text-align: center;
-    color: blanchedalmond;
-    padding: 20px;
+h1 {
+  text-align: center;
+  color: blanchedalmond;
+  padding: 20px;
 }
 
 .date{
     color: blanchedalmond;
+    position: relative;
+    left: 100px;
+  
     
     
 
 }
 
-.btn{
-    color: #c3195d;
+.btn {
+  color: #c3195d;
 }
-.salah-time-app-wrapper{
-    max-width: 480px;
-    margin: 30px auto;
+.salah-time-app-wrapper {
+  max-width: 480px;
+  margin: 30px auto;
 }
-.salah-time-app{
-    
-    padding: 20px;
-    border: 4px #0047ab;
-    border-radius: 20px;
-    background-color:#45056e;
-   
+.salah-time-app {
+  padding: 20px;
+  border: 4px #0047ab;
+  border-radius: 20px;
+  background-color: #45056e;
 }
 
-.emoji{
-    font-size: 50px; 
-    
+.emoji {
+  font-size: 50px;
 }
 
-.grid-container{
-    text-align: center;
-    
-    
-    
-    
+.grid-container {
+  text-align: center;
 }
 
-.col-4{
-    padding: 5px;
-    border: solid 1px #0047ab;
-    border-radius: 10px;
-    font-size: 20px;
-    color: blanchedalmond;
-    background-color: #1f024c;
-    
+.col-4 {
+  padding: 5px;
+  border: solid 1px #0047ab;
+  border-radius: 10px;
+  font-size: 20px;
+  color: blanchedalmond;
+  background-color: #1f024c;
+}
+
+footer {
+  color: white;
+  text-align: center;
 }
