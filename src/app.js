@@ -3,6 +3,14 @@ console.log(response);
 let currentDateElement = document.querySelector("#date");
 let currentDate = response.data.data.date.readable;
 currentDateElement.innerHTML = currentDate;
+let currentDayElement = document.querySelector("#day");
+let currentDay = response.data.data.date.gregorian.weekday.en;
+currentDayElement.innerHTML = `(${currentDay})`;
+let hijriDateElement = document.querySelector("#hijri-date");
+let hijriDay = response.data.data.date.hijri.day;
+let hijriMonth = response.data.data.date.hijri.month.en;
+let hijriYear = response.data.data.date.hijri.year;
+hijriDateElement.innerHTML = ` | ${hijriDay} ${hijriMonth} ${hijriYear}`;
 let fajrTime = response.data.data.timings.Fajr
 let fajrElement = document.querySelector("#fajr")
 fajrElement.innerHTML = fajrTime
