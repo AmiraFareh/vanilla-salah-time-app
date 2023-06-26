@@ -29,7 +29,9 @@ maghribElement.innerHTML = maghribTime;
 let ishaTime = response.data.data.timings.Isha;
 let ishaElement = document.querySelector("#isha");
 ishaElement.innerHTML = ishaTime;
-
+let midnightTime = response.data.data.timings.Midnight;
+let midnightElement = document.querySelector("#midnight");
+midnightElement.innerHTML = midnightTime;
 }
 
 
@@ -51,7 +53,7 @@ function storePosition(position) {
     let latitude = position.coords.latitude;
     let longitude = position.coords.longitude;
     console.log(position);
-    let apiUrl = `https://api.aladhan.com/v1/timings/${formatDate()}?latitude=${latitude}&longitude=${longitude}&method=3`;
+    let apiUrl = `https://api.aladhan.com/v1/timings/${formatDate()}?latitude=${latitude}&longitude=${longitude}&method=3&midnightMode=1`;
     axios.get(apiUrl).then(displaySalahTime); 
   }
 
