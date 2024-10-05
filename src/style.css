@@ -8,15 +8,17 @@ h1 {
   margin: 0;
 }
 
-.full-date{
+.full-date {
   text-align: center;
 }
-.date, .day, .hijri-date{
-    color: blanchedalmond;
-  
-    
-    
-
+.default-city {
+  color: blanchedalmond;
+  text-align: center;
+}
+.date,
+.day,
+.hijri-date {
+  color: blanchedalmond;
 }
 
 .btn {
