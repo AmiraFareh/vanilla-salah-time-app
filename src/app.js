@@ -69,7 +69,18 @@ function getLocation() {
   defaultCity.innerHTML = "Current City";
 }
 
+function getLiverpoolLocation(){
+  let latitude = -33.920921;
+  let longitude = 150.923141;
+  let defaultCity = document.querySelector("#default-city");
+  defaultCity.innerHTML = "Liverpool, Sydney";
+  getSalahTiming(latitude,longitude);
+}
+
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getLocation);
+
+let liverpoolLocationButton = document.querySelector("#liverpool-button");
+liverpoolLocationButton.addEventListener("click", getLiverpoolLocation);
 
 getSalahTiming(-37.78333, 175.28333);
